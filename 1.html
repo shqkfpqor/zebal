@@ -1,0 +1,152 @@
+
+<doctype html!>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="script.js"></script>
+  <title>this is a calculator for korea teacher's wage per month
+  </title>
+</head>
+<body>
+  <h1 class ="main_title"> 교사 월급계산기</h1>
+  <form action="action.php" method="post">
+  <div id="Hobong_selector">당신의 호봉은?
+
+          <select id="Hobong" name="Hobong123" size = "1" style="width:200px;"  >
+          <!--hobong_wage_value값+etc(가산금, 초과근무 등)하면된다.다음은 다음 페이지로 넘어가는.-->
+          <option  value = "0" selected >호봉을 선택해주세요</option>
+          <option  value = "2056400">9</option>
+          <option  value = "2112000">10</option>
+          <option  value = "2166500">11</option>
+          <option  value = "2222200">12</option>
+          <option  value = "2323400">13</option>
+          <option  value = "2425000">14</option>
+          <option  value = "2526500">15</option>
+          <option  value = "2628300">16</option>
+          <option  value = "2728800">17</option>
+          <option  value = "2834100">18</option>
+          <option  value = "2938800">19</option>
+          <option  value = "3043400">20</option>
+          <option  value = "3148000">21</option>
+          <option  value = "3264200">22</option>
+          <option  value = "3379500">23</option>
+          <option  value = "3494900">24</option>
+          <option  value = "3610300">25</option>
+          <option  value = "3726200">26</option>
+          <option  value = "3847000">27</option>
+          <option  value = "3967600">28</option>
+          <option  value = "4093700">29</option>
+          <option  value = "4220200">30</option>
+          <option  value = "4346300">31</option>
+          <option  value = "4472200">32</option>
+          <option  value = "4600100">33</option>
+          <option  value = "4727700">34</option>
+          <option  value = "4855400">35</option>
+          <option  value = "4982600">36</option>
+          <option  value = "5093400">37</option>
+          <option  value = "5204300">38</option>
+          <option  value = "5315400">39</option>
+          <option  value = "5425700">40</option>
+          <option  value = "29">근1</option>
+          <option  value = "29">근2</option>
+          <option  value = "29">근3</option>
+          <option  value = "29">근4</option>
+          <option  value = "29">근5</option>
+          </div>
+
+          </select>
+          부양가족수
+  <select id ="Family" style ="100px;">
+    <option value ="0">0</option>
+    <option value ="1">1</option>
+    <option value ="2">2</option>
+    <option value ="3">3</option>
+    <option value ="4">4</option>
+    <option value ="5">5</option>
+  </select>
+  </div>
+
+  <div id="Hobong_selector">초과 근무시간은?
+      <select id="extra_work" style="width:200px;">
+        <option value = "0" selected>없음</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+        <option value = "11">11</option>
+        <option value = "12">12</option>
+        <option value = "13">13</option>
+        <option value = "14">14</option>
+        <option value = "15">15</option>
+        <option value = "16">16</option>
+        <option value = "17">17</option>
+        <option value = "18">18</option>
+        <option value = "19">19</option>
+        <option value = "20">20</option>
+        <option value = "21">21</option>
+        <option value = "22">22</option>
+        <option value = "23">23</option>
+        <option value = "24">24</option>
+        <option value = "25">25</option>
+        <option value = "26">26</option>
+        <option value = "27">27</option>
+        <option value = "28">28</option>
+        <option value = "29">29</option>
+        <option value = "29">29</option>
+        <option value = "29">29</option>
+        <option value = "30">30</option>
+        <option value = "31">31</option>
+        <option value = "32">32</option>
+        <option value = "33">33</option>
+        <option value = "34">34</option>
+        <option value = "35">35</option>
+        <option value = "36">36</option>
+        <option value = "37">37</option>
+        <option value = "38">38</option>
+        <option value = "39">39</option>
+        <option value = "40">40</option>
+      </select>
+    담임교사여부
+        <select id ="main_Teachers" stlye ="100px;" >
+          <option value ="0">담임교사</option>
+          <option value ="1">비담임교사</option>
+        </select>
+      </div>
+ <input type="submit" value="계산">
+ </form>
+ <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://web1-2.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  </p>
+  <!--Hello Web
+나는 계산기를 만들거야. 우선 웹페이지에서 구동하는 계산기를 만들건데...
+이게 하다보니깐 php구현에서 막히고 말았네... 다시 돌아가서 <strong>기초부터 잘 배워서 1월 안에
+앱을 만들거야.</strong>
+-->
+</body>
+</html>
